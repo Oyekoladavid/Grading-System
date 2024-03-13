@@ -9,6 +9,7 @@
     height: fit-content;
     padding: 5px;
     border-radius: 15px;
+    margin-top: 15%;
 }
 
 .kola {
@@ -27,6 +28,8 @@
 
 body {
     background-image: linear-gradient(to right, #ffc107, #212529, #ffc107);
+    display: flex;
+    justify-content: center;
 }
 
 .display {
