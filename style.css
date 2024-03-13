@@ -6,8 +6,8 @@
 
 .frame {
     width: 600px;
-    height: 300px;
-    transform: translate(500px,250px);
+    height: fit-content;
+    padding: 5px;
     border-radius: 15px;
 }
 
@@ -17,12 +17,8 @@
     font-weight: 500;
 }
 
-.dinput {
-    width: 300px;
-}
-
 .button {
-    width: 150px;
+    padding: 5px;
     font-size: 24px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: 500;
@@ -35,6 +31,24 @@ body {
 
 .display {
     width: 200px;
-    height: 50px;
-    transform: translate(300px,-50px);
+    padding: 5px;
+}
+
+.hold-two {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media screen and (max-width :470px) {
+    .frame {
+        width: 100%;
+        transform: translate(-0px);
+        padding: 5px;
+        margin-top: 50%;
+    }
+    body {
+        overflow: hidden;
+    }
 }

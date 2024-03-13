@@ -1,7 +1,10 @@
 // var dinput = Number(score.value);
 
 function grademe() {
-    if 
+    if (isNaN (score.value) || score.value === "") {
+        show.innerHTML = 'invalid'
+    }
+    else if 
     (score.value >= 0 && score.value <= 39) {
         show.innerHTML = 'F - Fail'
         var fsong = new Audio('audio/satani.unknown')
@@ -35,5 +38,6 @@ function grademe() {
         show.innerHTML = 'Invalid'
         var msong = new Audio('audio/Nonesense.mp3')
         msong.play()
-    }
+    }else if (score.value == "")
+    show.innerHTML = 'put something'
 }
